@@ -1,0 +1,61 @@
+.map_container {
+   height: auto;
+   width: auto;
+   background-color: #32425a;
+}
+
+.map_svg {
+   height: auto;
+   width: auto;
+   display: block;
+   margin: 0 auto;
+}
+
+/* Map styles */
+/* Land */
+.land:active, .circle:active {
+   fill-opacity: .5;
+ }
+
+.land:hover, .circle:hover {
+   fill: #ce606f;
+   stroke-opacity: .6;
+   stroke: #fff;
+}
+
+.land, .circle
+{
+   fill: #29343F;
+   fill-opacity: 1;
+   stroke: #fff;
+   stroke-opacity: .1;
+   stroke-width: 3;
+   stroke-miterlimit: 3.97446823;
+   stroke-dasharray: none;
+   transition: 0.3s;
+}
+ 
+ /* Bodies of Water */
+ .ocean, .lake
+ {
+    opacity: 1;
+    color: #000000;
+    fill:#32425a;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:#fff;
+    stroke-width:0;
+    stroke-linecap:butt;
+    stroke-linejoin:miter;
+    marker:none;
+    marker-start:none;
+    marker-mid:none;
+    marker-end:none;
+    stroke-miterlimit:1;
+    stroke-dasharray:none;
+    stroke-dashoffset:0;
+    stroke-opacity:.5;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+ }
